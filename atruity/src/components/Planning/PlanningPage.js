@@ -28,7 +28,7 @@ class PlanningPage extends Component {
   }
   render() {
     return (
-      <div>
+      <div className="container">
         <div className="mission-vision">
           <TextBox
             title={this.state.titles[0]}
