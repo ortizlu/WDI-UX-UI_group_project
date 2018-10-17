@@ -5,25 +5,6 @@ class PlanningPage extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      titles: [
-        'mission',
-        'vision',
-        'values',
-        'strengths',
-        'weaknesses',
-        'opportunities',
-        'threats'
-      ],
-      mission: [
-        `This is a good place to start your strategic planning journey!`,
-        `You'll set your company's direction here.`,
-        `You'll put into words what your company cares about here.`,
-        `To edit, click the pencil icon`,
-        `To edit, click the pencil icon`,
-        `To edit, click the pencil icon`,
-        `To edit, click the pencil icon`,
-        `To edit, click the pencil icon`
-      ]
     }
   }
   render() {
@@ -31,36 +12,36 @@ class PlanningPage extends Component {
       <div>
         <div className="mission-vision">
           <TextBox
-            title={this.state.titles[0]}
-            content={this.state.mission[0]}
+            title={this.props.titles[0]}
+            content={this.props.mission[0]}
           />
           <TextBox
-            title={this.state.titles[1]}
-            content={this.state.mission[1]}
+            title={this.props.titles[1]}
+            content={this.props.mission[1]}
           />
         </div>
         <div className="value">
           <TextBox
-            title={this.state.titles[2]}
-            content={this.state.mission[2]}
+            title={this.props.titles[2]}
+            content={this.props.mission[2]}
           />
         </div>
         <div className="swot">
           <TextBox
-            title={this.state.titles[3]}
-            content={this.state.mission[3]}
+            title={this.props.titles[3]}
+            content={this.props.mission[3]}
           />
           <TextBox
-            title={this.state.titles[4]}
-            content={this.state.mission[4]}
+            title={this.props.titles[4]}
+            content={this.props.mission[4]}
           />
           <TextBox
-            title={this.state.titles[5]}
-            content={this.state.mission[5]}
+            title={this.props.titles[5]}
+            content={this.props.mission[5]}
           />
           <TextBox
-            title={this.state.titles[6]}
-            content={this.state.mission[6]}
+            title={this.props.titles[6]}
+            content={this.props.mission[6]}
           />
         </div>
       </div>
