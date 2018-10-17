@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css?family=Quattrocento:400,700");
+
+header {
+  background-color: rgba(28, 79, 142, 1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  a span {
+    display: none;
+  }
+}
+
+.nav-items {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-items a {
+  margin: 0 7px;
+}
+
+header h1 {
+  color: white;
+  font-family: "Quattrocento", serif;
+  font-weight: normal;
+  font-size: 48px;
+}

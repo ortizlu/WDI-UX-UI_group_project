@@ -2,28 +2,77 @@
 
 .mission,
 .vision,
-.values,
-.strengths,
-.weaknesses,
-.opportunities,
-.threats {
+.values {
   border: 2px solid rgba(28, 79, 142, 1);
   margin: 10px;
   font-family: "Quattrocento", serif;
 }
 
-.mission, .vision {
-    width: 50%;
-    /* margin: 10px 10%; */
+.strengths,
+.weaknesses,
+.opportunities,
+.threats {
+  border: 2px solid rgba(28, 79, 142, 1);
+  font-family: "Quattrocento", serif;
+}
+
+.strengths,
+.weaknesses {
+  border-bottom: 1px solid rgba(28, 79, 142, 1);
+}
+
+.opportunities,
+.threats {
+  border-top: 1px solid rgba(28, 79, 142, 1);
+}
+
+.strengths,
+.opportunities {
+  border-right: 1px solid rgba(28, 79, 142, 1);
+}
+
+.weaknesses,
+.threats {
+  border-left: 1px solid rgba(28, 79, 142, 1);
+}
+
+.mission,
+.vision {
+  width: 50%;
+  /* margin: 10px 10%; */
 }
 
 .mission-vision {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
+.swot {
+  display: grid;
+  grid-column-gap: 0px;
+  margin: 10px;
+  grid-template-columns: 1fr 1fr;
+}
 
-.strengths
+@media only screen and (max-width: 600px) {
+  .swot div div h3 {
+    font-size: 18px;
+  }
+
+  .mission-vision div div h3,
+  .value div div h3 {
+    font-size: 18px;
+  }
+}
+
+.content {
+  padding: 10px;
+}
+
+.content p {
+  font-size: 20px;
+}
+
 
 
 .title {
@@ -42,5 +91,4 @@
   text-transform: capitalize;
 }
 
-.content {
-}
+.content {}
