@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css?family=Quattrocento:400,700");
+
+.mission,
+.vision,
+.values,
+.strengths,
+.weaknesses,
+.opportunities,
+.threats {
+  border: 2px solid rgba(28, 79, 142, 1);
+  margin: 10px;
+  font-family: "Quattrocento", serif;
+}
+
+.mission, .vision {
+    width: 50%;
+    /* margin: 10px 10%; */
+}
+
+.mission-vision {
+    display: flex;
+    justify-content: center;
+}
+
+
+.strengths
+
+
+.title {
+  background: rgba(220, 226, 229, 1);
+  border-bottom: 2px solid rgba(28, 79, 142, 1);
+  color: rgba(28, 79, 142, 1);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  align-items: center;
+}
+
+.title h3 {
+  margin: 0;
+  font-size: 24px;
+  text-transform: capitalize;
+}
+
+.content {
+}
