@@ -9,7 +9,7 @@ class PlanningPage extends Component {
   }
   render() {
     return (
-      <div>
+      <div className="container">
         <div className="mission-vision">
           <TextBox
             title={this.props.titles[0]}
