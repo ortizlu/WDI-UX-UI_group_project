@@ -7,6 +7,7 @@ import { Route, Switch } from 'react-router-dom'
 import Header from './Header'
 import Sidebar from './Sidebar'
 import TextExpanded from '../Planning/TextExpanded'
+import Objectives from '../Objectives/Objectives'
 
 library.add(faPencilAlt)
 library.add(faBars)
@@ -69,6 +70,12 @@ class App extends Component {
 
           <main className="main">
             <Switch>
+              {/* objectives side button view */}
+              <Route 
+              path="/objectives"
+              render={Objectives}
+              />
+              {/* each individual box view */}
               <Route
                 path="/:id"
                 render={props => {
@@ -84,7 +91,7 @@ class App extends Component {
                   )
                 }}
               />
-
+              {/* main view landing page */}
               <Route
                 path="/"
                 render={props => {
