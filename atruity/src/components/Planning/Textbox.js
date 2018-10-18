@@ -1,26 +1,30 @@
 import React, { Component } from "react";
 import "./Textbox.css";
+import {
+  Link,
+} from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 
 class Textbox extends Component {
 
-  getState = () => {
-    this.setState({
-      link: 'path'
-    })
-  }
+  // getState = () => {
+  //   this.setState({
+  //     link: 'path'
+  //   })
+  // }
 
   render() {
+    console.log(this.Link)
     return (
-      <div className={this.props.title} >
+      <div className={this.props.oneBox.title} >
         <div className="title">
-          <h3>{this.props.title}</h3>
-          <a><FontAwesomeIcon icon="pencil-alt" className='fa-2x' onClick={this.setState} /></a>
+          <h3>{this.props.oneBox.title}</h3>
+          <Link to={'/'+this.props.oneBox.title}><FontAwesomeIcon icon="pencil-alt" className='fa-2x' /></Link>
         </div>
         <div className="content">
-            <p>{this.props.content}</p>
+            <p>{this.props.oneBox.content}</p>
         </div>
       </div>
     );

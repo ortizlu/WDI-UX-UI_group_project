@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './Sidebar.css'
+import { Link } from 'react-router-dom'
 
 class Sidebar extends Component {
   constructor() {
@@ -31,27 +32,27 @@ class Sidebar extends Component {
               x
             </a>
 
-            <a className="category">Planning</a>
+            <Link to="/" className="category">Overview</Link>
 
-            <a className="category-item">Mission</a>
+            <Link to="/mission" className="category-item">Mission</Link>
 
-            <a className="category-item">Values</a>
+            <Link to="/values" className="category-item">Values</Link>
 
-            <a className="category-item">Vision</a>
+            <Link to="/vision" className="category-item">Vision</Link>
 
-            <a className="category-item">SWOT Analysis</a>
+            <Link to="/swot_analysis" className="category-item">SWOT Analysis</Link>
 
-            <a className="category">Implementation</a>
+            <Link to="/implementation" className="category">Implementation</Link>
 
-            <a className="category-item">Objectives</a>
+            <Link to="/objectives" className="category-item">Objectives</Link>
 
-            <a className="category-item">Tasks</a>
+            <Link to="/tasks" className="category-item">Tasks</Link>
 
-            <a className="category-item">Roadmap</a>
+            <Link to="/roadmap" className="category-item">Roadmap</Link>
 
-            <a className="category">Report/Share</a>
+            <Link to="/share" className="category">Report/Share</Link>
 
-            <a className="category-item">Activity</a>
+            <Link to="/activity" className="category-item">Activity</Link>
 
             <span>© 2018 Atruity, Inc,</span>
             <span>All Rights Reserved</span>

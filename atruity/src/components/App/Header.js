@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 import '../App/Header.css'
+import { Link } from "react-router-dom";
 
 class Header extends Component {
   render() {
     return (
       <header>
-        <h1>Atruity</h1>
+        <Link to='/'><h1>Atruity</h1></Link>
         <div className="nav-items">
           <a>
             <span>Live</span> Chat
