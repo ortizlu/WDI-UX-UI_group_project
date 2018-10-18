@@ -8,6 +8,7 @@ import Header from './Header'
 import Sidebar from './Sidebar'
 import TextExpanded from '../Planning/TextExpanded'
 import Objectives from '../Objectives/Objectives'
+import Tasks from '../Objectives/Tasks'
 
 library.add(faPencilAlt)
 library.add(faBars)
@@ -73,7 +74,12 @@ class App extends Component {
               {/* objectives side button view */}
               <Route 
               path="/objectives"
-              render={Objectives}
+              Component={Objectives}
+              />
+              {/* tasks view */}
+              <Route 
+              route="/tasks"
+              component={Tasks} 
               />
               {/* each individual box view */}
               <Route
