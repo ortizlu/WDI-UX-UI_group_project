@@ -12,36 +12,29 @@ class PlanningPage extends Component {
       <div className="container">
         <div className="mission-vision">
           <TextBox
-            title={this.props.titles[0]}
-            content={this.props.mission[0]}
+            oneBox={this.props.allBoxes[0]}
           />
           <TextBox
-            title={this.props.titles[1]}
-            content={this.props.mission[1]}
+            oneBox={this.props.allBoxes[1]}
           />
         </div>
         <div className="value">
           <TextBox
-            title={this.props.titles[2]}
-            content={this.props.mission[2]}
+            oneBox={this.props.allBoxes[2]}
           />
         </div>
         <div className="swot">
           <TextBox
-            title={this.props.titles[3]}
-            content={this.props.mission[3]}
+            oneBox={this.props.allBoxes[3]}
           />
           <TextBox
-            title={this.props.titles[4]}
-            content={this.props.mission[4]}
+            oneBox={this.props.allBoxes[4]}
           />
           <TextBox
-            title={this.props.titles[5]}
-            content={this.props.mission[5]}
+            oneBox={this.props.allBoxes[5]}
           />
           <TextBox
-            title={this.props.titles[6]}
-            content={this.props.mission[6]}
+            oneBox={this.props.allBoxes[6]}
           />
         </div>
       </div>
