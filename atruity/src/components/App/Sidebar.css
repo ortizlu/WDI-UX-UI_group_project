@@ -5,6 +5,7 @@ aside {
   padding: 10px;
   position: fixed;
   height: 100%;
+  margin-top: 117px;
 }
 
 .main {
@@ -13,7 +14,7 @@ aside {
   align-items: center;
   margin: 0 auto;
   margin-left: 48px;
-  margin-top: 30px;
+  margin-top: 150px;
   width: 100%;
 }
 
@@ -26,10 +27,9 @@ aside {
   font-weight: bold;
   position: fixed;
   height: 100%;
-  font-size: 24px;
+  font-size: 20px;
+  transition: all .3s;
 }
-
-.category {}
 
 .category-item {
   margin-left: 20px;
@@ -42,6 +42,8 @@ aside {
   top: 0;
   margin: 10px;
   cursor: pointer;
+  transition: all .3s;
+
 }
 
 .container {

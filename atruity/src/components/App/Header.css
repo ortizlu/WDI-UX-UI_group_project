@@ -5,6 +5,9 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 }
 
 @media only screen and (max-width: 600px) {
@@ -28,9 +31,22 @@ header {
   margin: 0 7px;
 }
 
-header h1 {
+header h1,
+header h1:visited,
+header h1:hover {
   color: white;
   font-family: "Quattrocento", serif;
   font-weight: normal;
   font-size: 48px;
+  text-decoration: none;
+}
+
+.atruity,
+.atruity:visited {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }

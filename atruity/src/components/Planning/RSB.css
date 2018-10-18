@@ -1,18 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Quattrocento:400,700");
+
+
 .lightbulb {
-    background-color: #e8ed60; 
-    border-radius: 50px;
-    padding: 12px 22px;
+  background-color: #e8ed60;
+  border-radius: 50px;
+  padding: 12px 22px;
 }
+
 .bluetitle {
-    color: #1C4F8E;
+  color: #1C4F8E;
 }
+
 .expandedbar {
-    border-width: 0px;
-    width: 330px;
-    height: 1331px;
-    background: inherit;
-    background-color: rgba(232, 237, 96, 1);
-    border: none;
-    border-radius: 0px;
-    box-shadow: none;
+  border-width: 0px;
+  width: 330px;
+  height: 1331px;
+  background: inherit;
+  background-color: rgba(232, 237, 96, 1);
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
+  transition: all .3s;
+  padding: 20px;
+  position: relative;
+  border-radius: 5px;
+  line-height: 1.5;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 10px;
+  cursor: pointer;
+  transition: all .3s;
+  font-weight: bold;
+}
+
+.closeyellow {
+  font-weight: bold;
+  font-size: 40px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 10px;
+}
+
+.video {
+  width: 100%;
 }

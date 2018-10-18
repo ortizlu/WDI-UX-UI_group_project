@@ -1,25 +1,25 @@
-import React, { Component } from "react";
-import "./TextExpanded.css";
+import React, { Component } from 'react'
+import './TextExpanded.css'
 import Rsb from './RSB.js'
 
 class TextExpanded extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
-      textfield: "",
+      textfield: '',
       title: this.props.singleBox.title
-    };
+    }
   }
   changeText = e => {
     //event
-    this.setState({ textfield: e.target.value });
-  };
+    this.setState({ textfield: e.target.value })
+  }
 
   submitForm = e => {
-    e.preventDefault();
-    this.props.contentChange(this.state);
-    this.props.history.push("/");
-  };
+    e.preventDefault()
+    this.props.contentChange(this.state)
+    this.props.history.push('/')
+  }
 
   render() {
     return (
@@ -36,21 +36,22 @@ class TextExpanded extends Component {
                 value={this.state.textfield}
                 onChange={this.changeText}
               />
-              {/* <p>{this.props.singleBox.placeholder}</p> */}
             </div>
           </div>
-          <button type="submit" onClick={this.submitForm}>
-            {" "}
-            Submit{" "}
+          <button
+            className="submit-button"
+            type="submit"
+            onClick={this.submitForm}
+          >
+            {' '}
+            Submit{' '}
           </button>
         </div>
 
-      <Rsb/>
-
+        <Rsb />
       </div>
-
-    );
+    )
   }
 }
 
-export default TextExpanded;
+export default TextExpanded
