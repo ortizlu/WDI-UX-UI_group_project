@@ -6,6 +6,7 @@ aside {
   position: fixed;
   height: 100%;
   margin-top: 117px;
+  z-index: 400;
 }
 
 .main {

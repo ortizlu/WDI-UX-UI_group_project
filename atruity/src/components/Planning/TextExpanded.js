@@ -10,6 +10,7 @@ class TextExpanded extends Component {
       title: this.props.singleBox.title
     }
   }
+
   changeText = e => {
     //event
     this.setState({ textfield: e.target.value })
@@ -22,6 +23,8 @@ class TextExpanded extends Component {
   }
 
   render() {
+    console.log(this.props.singleBox.title)
+
     return (
       <div className="flex">
         <div className="textinput">

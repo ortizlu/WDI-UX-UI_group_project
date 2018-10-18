@@ -97,3 +97,7 @@
   font-size: 24px;
   text-transform: capitalize;
 }
+
+.flex-between {
+  display: flex;
+}
