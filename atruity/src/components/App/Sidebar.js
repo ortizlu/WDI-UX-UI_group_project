@@ -56,7 +56,7 @@ class Sidebar extends Component {
               Implementation
             </Link>
 
-            <Link to="/objectives" className="category-item">
+            <Link to="/blank" className="category-item">
               Objectives
             </Link>
 
@@ -64,15 +64,15 @@ class Sidebar extends Component {
               Tasks
             </Link>
 
-            <Link to="/roadmap" className="category-item">
+            <Link to="/implementation" className="category-item">
               Roadmap
             </Link>
 
-            <Link to="/share" className="category">
+            <Link to="/blank" className="category">
               Report/Share
             </Link>
 
-            <Link to="/activity" className="category-item">
+            <Link to="/blank" className="category-item">
               Activity
             </Link>
 

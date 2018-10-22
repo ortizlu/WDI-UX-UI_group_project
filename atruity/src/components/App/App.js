@@ -3,12 +3,15 @@ import './App.css'
 import PlanningPage from '../Planning/PlanningPage'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faPencilAlt, faBars } from '@fortawesome/free-solid-svg-icons'
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch, Link } from 'react-router-dom'
 import Header from './Header'
 import Sidebar from './Sidebar'
 import TextExpanded from '../Planning/TextExpanded'
 import Objectives from '../Objectives/Objectives'
-import Tasks from '../Objectives/Tasks'
+import Swot from '../Planning/SWOT'
+import Implementation from '../GrayBar/Implementation'
+import Tasks from '../GrayBar/Tasks'
+import Blank from '../GrayBar/Blank'
 
 library.add(faPencilAlt)
 library.add(faBars)
@@ -62,27 +65,43 @@ class App extends Component {
     let box = this.state.boxes.find(box => box.title === obj.title)
     this.state.boxes[this.state.boxes.indexOf(box)].content = obj.textfield
   }
-  
+
+  changeSwot = obj => {
+    this.state.boxes[3].content = obj.str
+    this.state.boxes[4].content = obj.wkn
+    this.state.boxes[5].content = obj.opp
+    this.state.boxes[6].content = obj.thr
+  }
+
   render() {
     return (
       <div>
         <Header />
-        <div className="flex">
+        <div className="flex bar">
           <Sidebar />
 
           <main className="main">
+            <div className="gray-nav">
+              <Link to="/">Planning</Link>
+              <Link to="/implementation">Implementation</Link>
+              <Link to="/tasks">My Tasks</Link>
+            </div>
             <Switch>
-              {/* objectives side button view */}
-              <Route 
-              path="/objectives"
-              Component={Objectives}
+              <Route path="/implementation" component={Implementation} />
+              <Route path="/blank" component={Blank} />
+              <Route path="/tasks" component={Tasks} />
+              <Route
+                path="/swot_analysis"
+                render={props => (
+                  <Swot
+                    boxes={this.state.boxes}
+                    contentChange={this.contentChange}
+                    changeSwot={this.changeSwot}
+                    {...props}
+                  />
+                )}
               />
-              {/* tasks view */}
-              <Route 
-              route="/tasks"
-              Component={Tasks} 
-              />
-              {/* each individual box view */}
+
               <Route
                 path="/:id"
                 render={props => {
@@ -98,6 +117,9 @@ class App extends Component {
                   )
                 }}
               />
+
+              {/* objectives side button view */}
+
               {/* main view landing page */}
               <Route
                 path="/"
