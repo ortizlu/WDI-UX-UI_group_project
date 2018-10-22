@@ -28,7 +28,7 @@ class Sidebar extends Component {
       <div>
         {this.state.expanded ? (
           <aside className="expanded">
-            <a onClick={this.close} className="close">
+            <a href="#" onClick={this.close} className="close">
               X
             </a>
 

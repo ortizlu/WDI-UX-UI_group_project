@@ -4,7 +4,7 @@ class Tasks extends Component {
   render() {
     return (
       <div>
-        <img src="./bars.png" />
+        <img src="./bars.png" alt="graybar"/>
       </div>
     )
   }

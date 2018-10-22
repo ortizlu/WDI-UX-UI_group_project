@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import './Textbox.css'
-import TextExpanded from '../Planning/TextExpanded'
-import { Link } from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import TextExpanded from '../Planning/TextExpanded'
+// import { Link } from 'react-router-dom'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Rsb from '../Planning/RSB'
 
 class SWOT extends Component {
