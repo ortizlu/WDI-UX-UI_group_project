@@ -62,6 +62,7 @@ class App extends Component {
     let box = this.state.boxes.find(box => box.title === obj.title)
     this.state.boxes[this.state.boxes.indexOf(box)].content = obj.textfield
   }
+  
   render() {
     return (
       <div>
@@ -79,7 +80,7 @@ class App extends Component {
               {/* tasks view */}
               <Route 
               route="/tasks"
-              component={Tasks} 
+              Component={Tasks} 
               />
               {/* each individual box view */}
               <Route
